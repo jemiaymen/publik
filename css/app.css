@@ -1,5 +1,7 @@
 .reg-cont {
     margin : 0px;  
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .reg-title {
@@ -10,11 +12,6 @@
 }
 
 
-body {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
 .reg-form{
     margin: 0 auto;
 }
@@ -23,9 +20,10 @@ body {
   border-width: 2px;
   border-color: rgb(0, 203, 255);
   border-style: solid;
-  position: absolute;
-  left: 305px;
-  top: 105px;
+  position: relative;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 95px;
   width: 671px;
   height: 524px;
   z-index: 32;
@@ -56,14 +54,13 @@ body {
     text-align: center;
 }
 
-.reg-text-danger, a:link, a:visited {
+.reg-text-danger, .reg-text-danger:link, .reg-text-danger:visited {
     color: #ff5b29;
     text-decoration: none!important;
 }
 
-.btn-r , button:hover{
+.btn-r, .btn-r:hover {
   background-color: rgb(250, 61, 46);
-  position: absolute;
   width: 241px;
   height: 50px;
   color: #FFF;
@@ -71,13 +68,163 @@ body {
   border-color: rgb(250, 61, 46);
   margin-top:20px;
   margin-left:213px;
+  
 }
 
-.btn-r:hover {
-    color: #FFF;
+.btn-r:valid {
+    box-shadow: none;
+    outline: none;
 }
 
-.btn-r:focus{
-    border-radius: 35px;
-    border-color: rgb(250, 61, 46);
+
+/*  */
+
+/* End Register style */
+
+.bg-con {
+    background-color: #0a0000;
+    background: url("../img/Background.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1;
 }
+
+.con-body {
+  background-color: rgba(255, 35, 0, 0.714);
+  position: relative;
+  margin-top: 147px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 650px;
+  height: 420px;
+  border-radius: 12px;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+  z-index: 2;
+}
+
+.col-left {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    height: 420px;
+    background-color: #FFF;
+    z-index: 3;
+}
+
+.col-right {
+    height: 420px;
+    z-index: 4;
+}
+
+.con-title{
+    margin-top : 40px;
+    text-align: center;
+}
+
+.con-left-title {
+    color: #00bfff;
+}
+
+.con-right-title {
+    color:#FFF;
+}
+
+.con-btn {
+  border-width: 2px;
+  border-style: solid;
+  width: 138px;
+  height: 38px;
+  border-radius: 35px;
+  background-color: transparent;
+  margin-left:78px;
+}
+
+.con-left-btn , .con-left-btn:hover {
+    border-color: rgb(0, 191, 255);
+    color: rgb(0, 191, 255);
+    z-index: 5;
+}
+
+
+.con-right-btn , .con-right-btn:hover {
+    border-color : #FFF;
+    color:#FFF;   
+    z-index: 6;
+}
+
+.con-label{
+    text-transform: uppercase;
+    text-align: center;
+    margin-left : 40px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+
+.con-txt {
+  margin-left : 40px;
+  margin-bottom: 20px;
+  width: 200px;
+  display: block;
+  border: none;
+  padding: 10px 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  
+}
+
+.con-txt:focus, .con-txt:valid , .con-btn:valid {
+ box-shadow: none;
+ outline: none;
+ background-position: 0 0;
+}
+
+.con-left-txt{
+    border-bottom: solid 1px rgb(0, 191, 255);
+    color: rgb(0, 191, 255);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, rgb(0, 191, 255) 40% );
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, rgb(0, 191, 255) 40%);
+}
+
+.label-left{
+    color: #d2d7dd;
+}
+
+.con-right-txt{
+    border-bottom: solid 1px white;
+    -webkit-text-fill-color: white;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, white 40% );
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, white 40%);
+}
+
+.label-right{
+    color: white;
+}
+
+.con-lbl-reg {
+    color:#25275c;
+    text-align: center;
+    margin-top:20px;
+}
+
+.con-link {
+    margin: 0 auto; 
+    display:block; 
+    text-align: center;
+    
+}
+
+.con-left-link, .con-left-link:visited , .con-left-link:link{
+    color:rgb(0, 191, 255);
+    text-decoration: none!important;
+}
+.con-right-link , .con-right-link:visited , .con-right-link:link{
+    color:white;
+    text-decoration: none!important;
+}
+/* End Connexion style */
