@@ -342,11 +342,11 @@ ul.dropdown-menu>li>a>i.fa {
     background-color: rgb(255, 255, 255);
     color: #53657b;
     border-radius: 0px;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .btn>.caret {
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
 .btn-blue,
@@ -359,7 +359,7 @@ ul.dropdown-menu>li>a>i.fa {
     background-color: rgb(0, 191, 255);
     color: white;
     border-radius: 0px;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 label {
@@ -518,20 +518,100 @@ a.footer-link:visited {
     text-decoration: none!important;
 }
 
-@media screen and (max-width: 766px) {
-    .top-concour {
-        padding-top: 220px;
+
+/* tablette */
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .btn-transp,
+    .btn-transp:active,
+    .btn-transp:hover,
+    .btn-transp:focus,
+    .btn-blue,
+    .btn-blue:active,
+    .btn-blue:hover,
+    .btn-blue:focus {
+        padding-left: 5px;
     }
-    a.footer-link,
-    a.footer-link:link,
-    a.footer-link:visited {
-        color: #8da0ad;
+    .btn>.caret {
         margin-left: 5px;
-        font-size: 12px;
-        font-weight: bold;
-        text-decoration: none!important;
     }
+    .btn-lg {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .con-item {
+        padding: 20px 0 20px 0;
+    }
+    .con-item-img {
+        width: 200px;
+        height: 140px;
+    }
+    .con-item-img>img {
+        width: 200px;
+        height: 140px;
+    }
+    .con-item-badge {
+        width: 75px;
+        height: 44px;
+        margin-top: -140px;
+        text-align: center;
+        padding-top: 12px;
+    }
+    .btn-con-item,
+    .btn-con-item:hover,
+    .btn-con-item:active,
+    .btn-con-item:focus {
+        width: 120px;
+    }
+    .con-body-title , .con-body-author {
+        padding-left : 5px;
+        padding-right  : 5px;
+    }
+}
+
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+    .btn-transp,
+    .btn-transp:active,
+    .btn-transp:hover,
+    .btn-transp:focus,
+    .btn-blue,
+    .btn-blue:active,
+    .btn-blue:hover,
+    .btn-blue:focus {
+        padding-left: 3px;
+    }
+    .btn>.caret {
+        margin-left: 3px;
+    }
+    .btn-lg {
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    .con-item > .container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .btn-con-item,
+    .btn-con-item:hover,
+    .btn-con-item:active,
+    .btn-con-item:focus {
+        width: 85px;
+    }
+    .con-body-title , .con-body-author {
+        padding-left : 5px;
+        padding-right  : 5px;
+    }
+
+    .con-item {
+        padding: 15px 0 15px 0;
+    }
+
     .container {
-        margin-left : 5px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
